@@ -9,9 +9,10 @@ Try it by typing in the console:
 
 ```plain
 game = new Game();
-var output = game.player.PickShipPosition("a1", "a2");
+// in the future: var output = game.player.PickShipPosition("a1", "a2");
+// --> working version for now var output = ["a1", "a2"]
 game.board.PutShipOnBoard(output, game.player.sign);
 game.interface.showBoard(game.board.positions);
 ```
 
-Next features - interface class will ask the player for the move. 
+Next features - interface class will ask the player for the move.

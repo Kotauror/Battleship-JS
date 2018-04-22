@@ -1,0 +1,19 @@
+{
+  "name": "battleships",
+  "version": "1.0.0",
+  "description": "Features implemented so far: - user can place a ship on a map when:   - a ship is admissible (vertical or horizontal);   - the places intended for the sip are free.",
+  "main": "board.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kotauror/Battleship-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kotauror/Battleship-JS/issues"
+  },
+  "homepage": "https://github.com/Kotauror/Battleship-JS#readme"
+}

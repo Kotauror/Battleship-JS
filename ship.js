@@ -1,4 +1,3 @@
-function Ship(stPos, endPos) {
-  this.startingPosition = stPos;
-  this.endingPos = endPos;
+function Ship(places) {
+  this.fields = places
 }
