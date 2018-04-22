@@ -41,13 +41,21 @@ Board.prototype.isUnique = function(array) {
 }
 
 Board.prototype.placeSignOnBoard = function(details, sign) {
-  for(var i = 0; i < details.length-1; i ++) {
-    for(var j = 0; j < this.positions.length-1; j++) {
-      console.log(details[i], this.positions[j])
-      if (details[i] == this.positions[j]) {
-        console.log(sign)
-        this.positions[j] = sign
+  for(var i = 0; i < this.positions.length-1; i++) {
+    for(var j = 0; j < details.length; j ++) {
+      if (this.positions[i] == details[j]) {
+        this.positions[i] = sign
       }
     }
   }
+
+  // for(var i = 0; i < details.length-1; i ++) {
+  //   for(var j = 0; j < this.positions.length-1; j++) {
+  //     console.log(details[i])
+  //     if (details[i] == this.positions[j]) {
+  //       console.log(sign)
+  //       this.positions[j] = sign
+  //     }
+  //   }
+  // }
 }
