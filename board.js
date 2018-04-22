@@ -5,6 +5,9 @@ function Board() {
 Board.prototype.PutShipOnBoard = function(details, sign) {
   if (this.CheckIfShipAdmissible(details) && this.IsPlaceForShip(details)) {
     this.placeSignOnBoard(details, sign)
+    return true
+  } else {
+    return false
   }
 }
 
